@@ -1,0 +1,11 @@
+Takes a combination of Model attributes and verifies uniqueness of the combination in the database table.
+
+Usage:
+See the following code example:
+
+public function rules()
+{
+    return array(
+        ....
+        array('attribute1+attribute2+attribute3', 'application.extensions.uniqueMultiColumnValidator'),
+        ....
